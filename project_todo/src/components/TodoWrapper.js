@@ -21,12 +21,27 @@ export const TodoWrapper = () => {
         );
     };
 
+    const deleteTodo = (id) => {
+        setTodos(todos.filter((todo) => todo.id !== id));
+    }
+    const editTodo = (id) => {
+        setTodos(
+            todos.map((todo) =>
+                todo.id === id ? { ...todo, isEditing: !todo.isEditing } : todo
+            )
+        );
+    };
+
     return (
         <div className="TodoWrapper">
             <h1>Todo Of The Day!</h1>
             <TodoForm addTodo={addTodo} />
             {todos.map((todo) => (
-                <Todo key={todo.id} task={todo} toggleComplete={toggleComplete} />
+                <Todo key={todo.id} task={todo} 
+                toggleComplete={toggleComplete}
+                deleteTodo={deleteTodo}
+                editTodo={editTodo} // take editTodo function
+                />
             ))}
         </div>
     );
