@@ -5,7 +5,7 @@
 
 
 
-Functionailities:
+Functionalities :
 ---------------
 
 Adding Todos
