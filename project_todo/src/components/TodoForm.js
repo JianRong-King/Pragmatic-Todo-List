@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export const TodoForm = ({addTodo}) => {
+export const TodoForm = ({addTodo}) => { // takes in addTodo as a prop
         const [value, setValue] = useState('');
         const handleSubmit = e => {
             e.preventDefault();
@@ -13,13 +13,14 @@ export const TodoForm = ({addTodo}) => {
     return (
         <form className = 'TodoForm' onSubmit={handleSubmit}>
             <input type = "text" className = 'todo-input'
-            value={value}
+            value= {value}
             placeholder= 'What is the task today?' 
-            onChange ={e => setValue(e.target.value)}
+            onChange ={e => setValue(e.target.value)} // showing in the text box
             />
+
             <button type='submit' className = "todo-btn" >
                 Add Task
-            </button>
+            </button>  
         </form>
     )
 }
