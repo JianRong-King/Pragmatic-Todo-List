@@ -1,168 +1,91 @@
-/* Global Styles */
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f4f8; /* Light background for the entire page */
-  color: #333; /* Dark text for better readability */
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Main Container */
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
-  background-color: #78d5cc; /* Light blue/grey background */
-  min-height: 100vh; /* Full viewport height */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
 }
 
-
-
-/* App Logo Animation */
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-/* Logo Spin Animation */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Todo Wrapper Styles */
 .TodoWrapper {
-  background-color: #3b5877; /* Light background for Todo section */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  max-width: 5000px; /* Limiting width for better readability */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
-  margin-top: 20px;
-}
-
-.Todo{
-  background-color: #5a4eda; /* Light background for Todo section */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  max-width: 5000px; /* Limiting width for better readability */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
-  margin-top: 20px;
-}
-
-/* Responsive Typography */
-.App-header h1 {
-  font-size: calc(16px + 3vw); /* Responsive header text */
-  font-weight: 700;
-  margin: 0;
-}
-
-/* Todo List Styles */
-.TodoWrapper h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #356048;
-}
-
-.TodoWrapper ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.TodoWrapper li {
-  font-size: 18px;
-  margin: 10px 0;
-  background-color: #13191d; /* Light background for todo items */
-  padding: 10px;
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for todo items */
 }
 
-.TodoWrapper li:hover {
-  background-color: #d1e1f1; /* Light hover effect */
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-/* Button Styles */
-button {
-  background-color: #354860; /* Dark button background */
-  color: #fff; /* White text */
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;  
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #4a688c; /* Darker shade on hover */
-}
-
-/* Input and Button Alignment */
-.TodoForm input,
-.TodoForm button {
-  height: 40px; /* Set the same height for both */
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  box-sizing: border-box; /* Ensure padding is included in the height */
-}
-
-
-
-.TodoForm button {
-  background-color: #9d53e7; /* Dark button background */
-  color: #fff; /* White text */
-  border: none;
+  padding: 0.55rem;
   cursor: pointer;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .App-header {
-    padding: 20px;
-  }
-
-  .TodoWrapper {
-    padding: 15px;
-  }
-
-  .App-header h1 {
-    font-size: calc(14px + 4vw); /* Adjust header size on smaller screens */
-  }
-
-  .TodoWrapper h2 {
-    font-size: 20px;
-  }
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 480px) {
-  .App-header h1 {
-    font-size: 18px; /* Make header text smaller for very small screens */
-  }
+.fa-trash {
+  margin-left: 0.75rem;
+}
 
-  button {
-    padding: 8px 16px; /* Smaller button padding */
-  }
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
 
-  .TodoWrapper li {
-    font-size: 16px; /* Slightly smaller text for smaller screens */
-  }
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
 }
