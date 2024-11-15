@@ -1,4 +1,4 @@
-# Live-Interactive Todo-List project made using React.js
+# Live-Interactive Todo-List project using React.js
 
 
 <img width="565" alt="image" src="https://github.com/user-attachments/assets/aa94af7b-d216-4111-a5c0-a16d72192d92">
