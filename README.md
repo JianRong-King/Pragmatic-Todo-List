@@ -18,7 +18,7 @@ Editing Live Existing Todos
 
 
 
-<img width="419" alt="image" src="https://github.com/user-attachments/assets/ecbbe7ee-61af-46ae-be22-e56524e67f9a">
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/cfc8fa98-c3d5-45c4-9191-0bd039f34ef0">
 
 
 
