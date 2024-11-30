@@ -1,7 +1,7 @@
 # Live-Interactive Todo-List project using React.js
 
 
-<img width="1122" alt="image" src="https://github.com/user-attachments/assets/d321f07a-6abf-4252-b592-9274a395246f">
+<img width="1126" alt="image" src="https://github.com/user-attachments/assets/39c13812-a820-4c14-a033-fc59b18ae0e3">
 
 
 
@@ -17,8 +17,7 @@ Deleting Todos
 Editing Live Existing Todos
 
 
-
-<img width="1118" alt="image" src="https://github.com/user-attachments/assets/c73b2b56-c1dc-42f1-9574-e35b5077adcd">
+<img width="1128" alt="image" src="https://github.com/user-attachments/assets/62870988-4b68-4d62-9555-2f0104338db6">
 
 
 
