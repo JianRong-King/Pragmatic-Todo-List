@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
-import { EditTodoForm } from './EditToDoForm';
+
 
 export const Todo = ({ task, toggleComplete, deleteTodo , editTodo}) => {
     return (
