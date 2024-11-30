@@ -8,10 +8,20 @@
 }
 
 body {
-  background: #8758ff;
+
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  background: -webkit-linear-gradient(-45deg, rgba(167, 133, 196, 1) 0%, rgba(124, 188, 10, 1) 100%);
+  background: linear-gradient(-45deg, rgba(17, 133, 196, 1) 0%, rgba(124, 188, 10, 1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+
 }
 
 .App {
@@ -26,14 +36,16 @@ h1 {
 
 .TodoWrapper {
   background: #1A1A40;
-  margin-top: 5rem;
+  margin-top: 0rem;
   padding: 2rem;
   border-radius: 5px;
+  text-align:;
 }
 
 .TodoForm {
   width: 100%;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .todo-input {
