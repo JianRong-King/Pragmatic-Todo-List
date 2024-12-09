@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TodoForm } from './TodoForm';
 import { v4 as uuidv4 } from 'uuid';
 import { Todo } from './todo';
 import { EditToDoForm } from './EditToDoForm';
 
+
 export const TodoWrapper = () => {
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState( () => {
+        const localValue = localStorage.getItem("ITEMS")
+        if (localValue === null) return [];
+
+        return JSON.parse(localValue);
+    } );
+    
+
+    useEffect( () =>{
+        localStorage.setItem("ITEMS", JSON.stringify(todos))
+    }, [todos]
+    )
 
     const addTodo = (todo) => {
         setTodos([
