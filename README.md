@@ -1,4 +1,11 @@
-# Live-Interactive Todo-List project using React.js
+# A Full-Stack Todo List Application
+This application allows users to manage tasks (todos) in an efficient way. It implements a RESTful API for the backend, which interacts with a PostgreSQL database for storing tasks. The frontend is built using React, enabling users to easily add, edit, mark tasks as complete, and delete tasks.
+
+Features:
+- Create: Users can add new tasks to the to-do list.
+- Read: Users can view all the tasks.
+- Update: Users can edit existing tasks to update their descriptions.
+- Delete: Users can remove tasks from the to-do list.
 
 
 <img width="1126" alt="image" src="https://github.com/user-attachments/assets/39c13812-a820-4c14-a033-fc59b18ae0e3">
@@ -44,4 +51,6 @@ Available Scripts ( Test and play with it at your Terminal ) !
 ------------
 In the project directory, you can run:
 ### `npm start`
+TO run the code, you will need to install postgres and create a Todo Table
+
 
