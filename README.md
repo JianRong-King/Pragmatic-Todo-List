@@ -1,5 +1,5 @@
 # A Full-Stack Todo List Application
-This application allows users to manage tasks (todos) in an efficient way. It implements a <b>RESTful API</b> for the backend, which interacts with a <b>PostgreSQL</b> database for storing tasks. The frontend is built using React, enabling users to easily add, edit, mark tasks as complete, and delete tasks.
+This application allows users to manage tasks (todos) in an efficient way. It implements a <b>RESTful API</b> for the backend using <b>Express</b> as mock backend, which interacts with a <b>PostgreSQL</b> database for storing tasks. The frontend is built using React, enabling users to easily add, edit, mark tasks as complete, and delete tasks.
 
 Features:
 - Create: Users can add new tasks to the to-do list.
